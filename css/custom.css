@@ -41,6 +41,17 @@ img {
 .col-xs-12 {
   padding: 0px; }
 
+.navbar-toggle {
+  float: left;
+  margin: 10px; }
+
+.navbar {
+  background-color: #191f2d;
+  border-color: white; }
+
+.navbar-inverse .navbar-collapse {
+  border-color: white; }
+
 .content {
   margin-top: 100px; }
 
