@@ -33,7 +33,7 @@ img {
 .intro-text {
   padding-top: 20px;
   margin: 0 auto;
-  color: #918f8f; }
+  color: #c1c1c1; }
 
 .navbar-nav {
   text-align: center; }
@@ -54,3 +54,24 @@ img {
 
 .content {
   margin-top: 100px; }
+
+.content-title {
+  text-align: center;
+  width: 100%;
+  color: #191f2d; }
+
+a:hover {
+  color: #2d2d2d; }
+
+.footer {
+  margin-top: 50px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #191f2d;
+  text-align: center;
+  font-size: 10px;
+  color: #c1c1c1; }
+
+/*# sourceMappingURL=custom.css.map */
