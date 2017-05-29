@@ -87,7 +87,7 @@ a:hover {
 .shape {
   stroke-dasharray: 140 540;
   stroke-dashoffset: -474;
-  stroke-width: 5px;
+  stroke-width: 3px;
   fill: transparent;
   stroke: #191f2d;
   border-bottom: 2px solid black;
@@ -103,8 +103,6 @@ a:hover {
   position: relative; }
 
 .svg-wrapper:hover .shape {
-  stroke-width: 2px;
+  stroke-width: 3px;
   stroke-dashoffset: 0;
   stroke-dasharray: 760; }
-
-/*# sourceMappingURL=custom.css.map */
