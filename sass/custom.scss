@@ -94,6 +94,7 @@ img{
 
 a:hover{
 	color: #2d2d2d;
+	text-decoration: none;
 }
 
 // ----------Footer---------- //
@@ -111,25 +112,20 @@ a:hover{
 }
 
 // ----------Button---------- //
-.content-button{
-	width: 100px;
-	margin: 0 auto;
-	position: absolute;
-}
+
 
 // --------------Button Hover---------------//
 
 .svg-wrapper {
 	position: relative;
 	top: 50%;
-	transform: translateY(-50%);
 	margin: 0 auto;
 	width: 320px;  
 }
 .shape {
 	stroke-dasharray: 140 540;
 	stroke-dashoffset: -474;
-	stroke-width: 8px;
+	stroke-width: 5px;
 	fill: transparent;
 	stroke: #191f2d;
 	border-bottom: 2px solid black;
@@ -137,9 +133,9 @@ a:hover{
 }
 .text {
 	text-align: center;
-	font-size: 22px;
+	font-size: 40px;
 	line-height: 32px;
-	letter-spacing: 8px;
+	letter-spacing: 5px;
 	color: black;
 	top: -48px;
 	position: relative;
