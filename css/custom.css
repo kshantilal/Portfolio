@@ -26,7 +26,7 @@ img {
   padding: 20px; }
 
 .logo-center {
-  padding-top: 270px;
+  padding-top: 240px;
   margin: 0 auto;
   width: 100px; }
 
@@ -39,8 +39,9 @@ img {
   text-align: center;
   -webkit-transition: 1s; }
 
-.col-xs-12 {
-  padding: 0px; }
+.col-noPadding {
+  padding-right: 0px;
+  padding-left: 0px; }
 
 .navbar-toggle {
   float: left;
@@ -103,7 +104,7 @@ a:hover {
   stroke-dasharray: 286 540;
   stroke-dashoffset: -403; }
 
-.text {
+.content-title {
   text-align: center;
   font-size: 40px;
   font-weight: bold;
@@ -116,5 +117,19 @@ a:hover {
   stroke-width: 3px;
   stroke-dashoffset: 0;
   stroke-dasharray: 760; }
+
+.text-container {
+  padding-top: 100px;
+  margin-top: 50px; }
+
+.titles {
+  font-size: 20px;
+  font-weight: bold;
+  color: #191f2d; }
+
+.content-container {
+  max-width: 1170px;
+  padding-right: 40px;
+  padding-left: 40px; }
 
 /*# sourceMappingURL=custom.css.map */

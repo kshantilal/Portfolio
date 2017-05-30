@@ -6,6 +6,7 @@
 // SASS Variables
 
 $max : 100%;
+$navy-color: #191f2d;
 
 //------------------------------------//
 
@@ -33,13 +34,13 @@ img{
 
 .cover-container{
 	text-align: center;
-	background-color: #191f2d;
+	background-color: $navy-color;
 	height: 100vh;
 	padding: 20px;
 }
 
 .logo-center{
-	padding-top: 270px;
+	padding-top: 240px;
 	margin: 0 auto;
 	width: 100px;
 
@@ -58,8 +59,10 @@ img{
 	text-align: center;
 	-webkit-transition: 1s;
 }
-.col-xs-12{
-	padding: 0px;
+
+.col-noPadding{
+	padding-right: 0px;
+	padding-left: 0px;
 }
 
 .navbar-toggle{
@@ -68,7 +71,7 @@ img{
 }
 
 .navbar{
-	background-color: #191f2d;
+	background-color: $navy-color;
 	border-color: white;
 }
 
@@ -86,7 +89,7 @@ img{
 .content-title{
 	text-align: center;
 	width: $max;
-	color: #191f2d;
+	color: $navy-color;
 }
 
 #webdesign{
@@ -107,7 +110,7 @@ a:hover{ //deletes the link line
 	bottom: 0;
 	left: 0;
 	padding: 2.5rem;
-	background-color: #191f2d;
+	background-color: $navy-color;
 	text-align: center;
 	font-size: 10px;
 	color: #424242;
@@ -132,7 +135,7 @@ a:hover{ //deletes the link line
 	stroke-dashoffset: -474;
 	stroke-width: 3px;
 	fill: transparent;
-	stroke: #191f2d;
+	stroke: $navy-color;
 	border-bottom: 2px solid black;
 	transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
 }
@@ -142,12 +145,12 @@ a:hover{ //deletes the link line
 }
 
 
-.text {
+.content-title {
 	text-align: center;
 	font-size: 40px;
 	font-weight: bold;
 	line-height: 32px;
-	color: #191f2d;
+	color: $navy-color;
 	top: -48px;
 	position: relative;
 }
@@ -155,4 +158,24 @@ a:hover{ //deletes the link line
 	stroke-width: 3px;
 	stroke-dashoffset: 0;
 	stroke-dasharray: 760;
+}
+
+
+// ----------CONTENT PAGES---------- //
+
+.text-container{
+	padding-top: 100px;
+	margin-top: 50px;
+}
+
+.titles{
+	font-size: 20px;
+	font-weight: bold;
+	color: $navy-color;
+}
+
+.content-container{
+	max-width: 1170px;
+	padding-right: 40px;
+	padding-left: 40px;
 }
