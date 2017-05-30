@@ -132,4 +132,16 @@ a:hover {
   padding-right: 40px;
   padding-left: 40px; }
 
+.noTop {
+  top: 0px; }
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none; }
+
+.glyphicon, .glyphicon-chevron-left, .glyphicon-chevron-left {
+  color: #191f2d; }
+
+.carousel-indicators li {
+  border: 1px solid #191f2d; }
+
 /*# sourceMappingURL=custom.css.map */

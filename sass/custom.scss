@@ -179,3 +179,22 @@ a:hover{ //deletes the link line
 	padding-right: 40px;
 	padding-left: 40px;
 }
+
+.noTop{
+	top: 0px;
+}
+
+// ----------CAROUSEL---------- //
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+.glyphicon, .glyphicon-chevron-left, .glyphicon-chevron-left{
+	color: $navy-color;
+}
+
+.carousel-indicators li{
+	border: 1px solid $navy-color;
+}
+
