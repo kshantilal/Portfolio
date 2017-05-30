@@ -36,7 +36,8 @@ img {
   color: #c1c1c1; }
 
 .navbar-nav {
-  text-align: center; }
+  text-align: center;
+  -webkit-transition: 1s; }
 
 .col-xs-12 {
   padding: 0px; }
@@ -68,15 +69,20 @@ a:hover {
   text-decoration: none; }
 
 .footer {
+  height: 60px;
   margin-top: 50px;
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 1rem;
+  padding: 2.5rem;
   background-color: #191f2d;
   text-align: center;
   font-size: 10px;
-  color: #c1c1c1; }
+  color: #424242; }
+
+.footer-text:hover {
+  color: #c1c1c1;
+  -webkit-transition: color 1s; }
 
 .svg-wrapper {
   position: relative;
@@ -93,12 +99,16 @@ a:hover {
   border-bottom: 2px solid black;
   transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s; }
 
+.shape-photography {
+  stroke-dasharray: 286 540;
+  stroke-dashoffset: -403; }
+
 .text {
   text-align: center;
   font-size: 40px;
+  font-weight: bold;
   line-height: 32px;
-  letter-spacing: 5px;
-  color: black;
+  color: #191f2d;
   top: -48px;
   position: relative; }
 
@@ -106,3 +116,5 @@ a:hover {
   stroke-width: 3px;
   stroke-dashoffset: 0;
   stroke-dasharray: 760; }
+
+/*# sourceMappingURL=custom.css.map */
