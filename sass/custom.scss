@@ -122,6 +122,7 @@ a:hover{ //deletes the link line
 
 
 
+
 // --------------Button Hover---------------//
 
 .svg-wrapper {
@@ -163,12 +164,15 @@ a:hover{ //deletes the link line
 
 // ----------CONTENT PAGES---------- //
 
-.text-container{
-	padding-top: 100px;
-	margin-top: 50px;
+.title-container{
+	margin-top: 120px;
+	margin-bottom: 40px;
+	padding-right: 20px;
+	padding-left: 20px;
 }
 
 .titles{
+	padding-bottom: 10px;
 	font-size: 20px;
 	font-weight: bold;
 	color: $navy-color;
@@ -186,6 +190,10 @@ a:hover{ //deletes the link line
 
 .blurb{
 	padding-bottom: 10px;
+}
+
+.text-container{
+	margin-top: 50px;
 }
 
 // ----------CAROUSEL---------- //

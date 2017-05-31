@@ -118,11 +118,14 @@ a:hover {
   stroke-dashoffset: 0;
   stroke-dasharray: 760; }
 
-.text-container {
-  padding-top: 100px;
-  margin-top: 50px; }
+.title-container {
+  margin-top: 120px;
+  margin-bottom: 40px;
+  padding-right: 20px;
+  padding-left: 20px; }
 
 .titles {
+  padding-bottom: 10px;
   font-size: 20px;
   font-weight: bold;
   color: #191f2d; }
@@ -138,6 +141,9 @@ a:hover {
 .blurb {
   padding-bottom: 10px; }
 
+.text-container {
+  margin-top: 50px; }
+
 .carousel-control.left, .carousel-control.right {
   background-image: none; }
 
@@ -146,3 +152,5 @@ a:hover {
 
 .carousel-indicators li {
   border: 1px solid #191f2d; }
+
+/*# sourceMappingURL=custom.css.map */
