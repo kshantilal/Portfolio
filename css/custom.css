@@ -130,11 +130,13 @@ a:hover {
 .content-container {
   max-width: 1170px;
   padding-right: 40px;
-  padding-left: 40px;
-  padding-bottom: 20px; }
+  padding-left: 40px; }
 
 .noTop {
   top: 0px; }
+
+.blurb {
+  padding-bottom: 10px; }
 
 .carousel-control.left, .carousel-control.right {
   background-image: none; }
@@ -144,5 +146,3 @@ a:hover {
 
 .carousel-indicators li {
   border: 1px solid #191f2d; }
-
-/*# sourceMappingURL=custom.css.map */
