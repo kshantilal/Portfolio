@@ -211,8 +211,10 @@ a:hover{ //deletes the link line
 // ----------SLIDER---------- //
 
 .swiper-container {
-	width: 100%;
+	max-width: 1024px;
+	max-height: 20%;
 	min-height: 230px;
+
 }
 .swiper-button-next{
 	background-size: 20px;
@@ -241,6 +243,10 @@ a:hover{ //deletes the link line
 	align-items: center;
 }
 
+// .constrict{
+// 	max-height: 600px;
+// }
+
 
 .Bang-Image{ //Places the Bang Image in the center of the slideshow
 	margin-top: 20%;
@@ -249,16 +255,16 @@ a:hover{ //deletes the link line
 
 #webdesign{
 	overflow: hidden;
-	perspective: 500px;
+	perspective: 300px;
 	transform-style: preserve-3d;
 }
 #graphic{
 	overflow: hidden;
-	perspective: 500px;
+	perspective: 300px;
 	transform-style: preserve-3d;
 }
 #photography{
 	overflow: hidden;
-	perspective: 500px;
+	perspective: 300px;
 	transform-style: preserve-3d;
 }

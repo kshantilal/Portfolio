@@ -10,17 +10,17 @@ $(document).ready(function(){
 		loop: true, //Loops over the slider
 		speed: 1000,
 		autoplay: 3000,
-		autoplayDisableOnInteraction: false, //When user interacts with the slider it continues
+		// autoplayDisableOnInteraction: false, //When user interacts with the slider it continues
 		// Cube Effect on Slideshow
-		effect: "cube", 
-			  cube:	{
-			  slideShadows: true,
-			  shadow: true,
-			  shadowOffset: 20,
-			  shadowScale: 0.94
-			}
-	
+		// effect: "cube", 
+		// 	  cube:	{
+		// 	  slideShadows: true,
+		// 	  shadow: true,
+		// 	  shadowOffset: 20,
+		// 	  shadowScale: 0.94
+		// 	}
 
+		
 
 	});
 

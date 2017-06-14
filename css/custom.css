@@ -145,7 +145,8 @@ a:hover {
   margin-top: 50px; }
 
 .swiper-container {
-  width: 100%;
+  max-width: 1024px;
+  max-height: 20%;
   min-height: 230px; }
 
 .swiper-button-next {
@@ -180,17 +181,17 @@ a:hover {
 
 #webdesign {
   overflow: hidden;
-  perspective: 500px;
+  perspective: 300px;
   transform-style: preserve-3d; }
 
 #graphic {
   overflow: hidden;
-  perspective: 500px;
+  perspective: 300px;
   transform-style: preserve-3d; }
 
 #photography {
   overflow: hidden;
-  perspective: 500px;
+  perspective: 300px;
   transform-style: preserve-3d; }
 
 /*# sourceMappingURL=custom.css.map */
