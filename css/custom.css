@@ -148,6 +148,14 @@ a:hover {
   width: 100%;
   min-height: 230px; }
 
+.swiper-button-next {
+  background-size: 20px;
+  margin-right: 20px; }
+
+.swiper-button-prev {
+  background-size: 20px;
+  margin-left: 20px; }
+
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -168,6 +176,21 @@ a:hover {
 
 .Bang-Image {
   margin-top: 20%;
-  margin-bottom: 20%; }
+  margin-bottom: 25%; }
+
+#webdesign {
+  overflow: hidden;
+  perspective: 500px;
+  transform-style: preserve-3d; }
+
+#graphic {
+  overflow: hidden;
+  perspective: 500px;
+  transform-style: preserve-3d; }
+
+#photography {
+  overflow: hidden;
+  perspective: 500px;
+  transform-style: preserve-3d; }
 
 /*# sourceMappingURL=custom.css.map */
