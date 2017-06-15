@@ -131,9 +131,10 @@ a:hover {
   color: #191f2d; }
 
 .content-container {
-  max-width: 1170px;
-  padding-right: 40px;
-  padding-left: 40px; }
+  max-width: 800px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0 auto; }
 
 .noTop {
   top: 0px; }
@@ -194,4 +195,10 @@ a:hover {
   perspective: 300px;
   transform-style: preserve-3d; }
 
-/*# sourceMappingURL=custom.css.map */
+.invisible {
+  transition: opacity 0.5s ease;
+  opacity: 0.0; }
+
+.visible {
+  transition: opacity 0.5s ease;
+  opacity: 1.0; }
