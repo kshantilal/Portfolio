@@ -92,13 +92,25 @@ img{
 	color: $navy-color;
 }
 
-#webdesign{
-	position: relative;
-}
-
 a:hover{ //deletes the link line
 	color: #2d2d2d;
 	text-decoration: none;
+}
+#webdesign{
+	position: relative;
+	overflow: hidden;
+	perspective: 300px;
+	transform-style: preserve-3d;
+}
+#graphic{
+	overflow: hidden;
+	perspective: 300px;
+	transform-style: preserve-3d;
+}
+#photography{
+	overflow: hidden;
+	perspective: 300px;
+	transform-style: preserve-3d;
 }
 
 // ----------Footer---------- //
@@ -164,7 +176,6 @@ a:hover{ //deletes the link line
 
 .title-container{
 	margin-top: 120px;
-	margin-bottom: 40px;
 	padding-right: 20px;
 	padding-left: 20px;
 }
@@ -180,6 +191,7 @@ a:hover{ //deletes the link line
 	max-width: 800px;
 	padding-right: 20px;
 	padding-left: 20px;
+	padding-top: 40px;
 	margin: 0 auto;
 }
 
@@ -244,43 +256,58 @@ a:hover{ //deletes the link line
 	align-items: center;
 }
 
-// .constrict{
-// 	max-height: 600px;
-// }
-
-
 .Bang-Image{ //Places the Bang Image in the center of the slideshow
 	margin-top: 20%;
 	margin-bottom: 25%;
 }
 
-#webdesign{
-	overflow: hidden;
-	perspective: 300px;
-	transform-style: preserve-3d;
-}
-#graphic{
-	overflow: hidden;
-	perspective: 300px;
-	transform-style: preserve-3d;
-}
-#photography{
-	overflow: hidden;
-	perspective: 300px;
-	transform-style: preserve-3d;
-}
 
 //---------- Trigger Scroll ----------//
 
 
-.invisible {
-	transition: opacity 0.5s ease;
+.fromTopIn{
+	transition: transform 1.0s ease, opacity 1.0s ease;
+	transform: translate(0,0);
+	opacity: 1.0;
+}
+
+.fromTopOut{
+	transition: transform 1.0s ease, opacity 1.0s ease;
+	transform: translate(0,-20px);
 	opacity: 0.0;
 }
 
-.visible {
-	transition: opacity 0.5s ease;
+.fromBottomIn{
+	transition: transform 1.0s ease, opacity 1.0s ease;
+	transform: translate(0,0);
 	opacity: 1.0;
 }
+
+.fromBottomOut{
+	transition: transform 1.0s ease, opacity 1.0s ease;	
+	transform: translate(0,20px);
+	opacity: 0.0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

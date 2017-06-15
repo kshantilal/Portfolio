@@ -62,12 +62,25 @@ img {
   width: 100%;
   color: #191f2d; }
 
-#webdesign {
-  position: relative; }
-
 a:hover {
   color: #2d2d2d;
   text-decoration: none; }
+
+#webdesign {
+  position: relative;
+  overflow: hidden;
+  perspective: 300px;
+  transform-style: preserve-3d; }
+
+#graphic {
+  overflow: hidden;
+  perspective: 300px;
+  transform-style: preserve-3d; }
+
+#photography {
+  overflow: hidden;
+  perspective: 300px;
+  transform-style: preserve-3d; }
 
 .footer {
   height: 60px;
@@ -120,7 +133,6 @@ a:hover {
 
 .title-container {
   margin-top: 120px;
-  margin-bottom: 40px;
   padding-right: 20px;
   padding-left: 20px; }
 
@@ -134,6 +146,7 @@ a:hover {
   max-width: 800px;
   padding-right: 20px;
   padding-left: 20px;
+  padding-top: 40px;
   margin: 0 auto; }
 
 .noTop {
@@ -180,25 +193,24 @@ a:hover {
   margin-top: 20%;
   margin-bottom: 25%; }
 
-#webdesign {
-  overflow: hidden;
-  perspective: 300px;
-  transform-style: preserve-3d; }
+.fromTopIn {
+  transition: transform 1.0s ease, opacity 1.0s ease;
+  transform: translate(0, 0);
+  opacity: 1.0; }
 
-#graphic {
-  overflow: hidden;
-  perspective: 300px;
-  transform-style: preserve-3d; }
-
-#photography {
-  overflow: hidden;
-  perspective: 300px;
-  transform-style: preserve-3d; }
-
-.invisible {
-  transition: opacity 0.5s ease;
+.fromTopOut {
+  transition: transform 1.0s ease, opacity 1.0s ease;
+  transform: translate(0, -20px);
   opacity: 0.0; }
 
-.visible {
-  transition: opacity 0.5s ease;
+.fromBottomIn {
+  transition: transform 1.0s ease, opacity 1.0s ease;
+  transform: translate(0, 0);
   opacity: 1.0; }
+
+.fromBottomOut {
+  transition: transform 1.0s ease, opacity 1.0s ease;
+  transform: translate(0, 20px);
+  opacity: 0.0; }
+
+/*# sourceMappingURL=custom.css.map */

@@ -39,10 +39,10 @@
 		
 		<div class="row">
 			<div class="col-xs-12">
-			<hr>
 				<div class="content-container">
-					<div class="titles">Flick Electric</div>
-					<p class="blurb">Flick Electric Home Automation system was created as part of a project at my time studying towards a Diploma of Web Development at Yoobee School of Design. The brief was to design a Home Automation system for an existing company that was responsive for mobile, tablet and smart tv. The front-end was created using CSS Media Queries, jQuery scripting language &#38; Bootstrap Framework.</p>
+				<hr>
+					<div class="titles" data-scroll="toggle(.fromTopIn, .fromTopOut)">Flick Electric</div>
+					<p class="blurb" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">Flick Electric Home Automation system was created as part of a project at my time studying towards a Diploma of Web Development at Yoobee School of Design. The brief was to design a Home Automation system for an existing company that was responsive for mobile, tablet and smart tv. The front-end was created using CSS Media Queries, jQuery scripting language &#38; Bootstrap Framework.</p>
 				</div>	
 			</div>
 		</div>
@@ -88,10 +88,10 @@
 		<!-- BANG -->
 		<div class="row">
 			<div class="col-xs-12">
-			<hr>
 				<div class="content-container">
-					<div class="titles">BANG!</div>
-					<p class="blurb">BANG is a childrens picture book which was recreated for a tablet device using animated gifs that can be interacted with using Javascript &#38; jQuery. Users are able to have a more interactive experience with simple swipe and tap functions with the use of jQuery plugins. All the page transisions were created using jQuery mobile. The animations were created in Adobe Photoshop and were exported as gifs. BANG was created at my time at Victoria University, School of Design</p>
+				<hr>
+					<div class="titles" data-scroll="toggle(.fromTopIn, .fromTopOut)">BANG!</div>
+					<p class="blurb" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">BANG is a childrens picture book which was recreated for a tablet device using animated gifs that can be interacted with using Javascript &#38; jQuery. Users are able to have a more interactive experience with simple swipe and tap functions with the use of jQuery plugins. All the page transisions were created using jQuery mobile. The animations were created in Adobe Photoshop and were exported as gifs. BANG was created at my time at Victoria University, School of Design</p>
 				</div>	
 			</div>
 		</div>
@@ -135,7 +135,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.js"></script>
+<script type="text/javascript" src="js/ScrollTrigger.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript">
+	document.addEventListener('DOMContentLoaded', function(){
+	var trigger = new ScrollTrigger();
+
+	});
+</script>
 <!-- <script src="js/custom.js"></script> -->
 </body>
 </html>
