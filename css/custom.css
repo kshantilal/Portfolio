@@ -45,7 +45,8 @@ img {
 
 .navbar-toggle {
   float: left;
-  margin: 10px; }
+  margin: 10px;
+  border: none; }
 
 .navbar {
   background-color: #191f2d;
@@ -53,6 +54,9 @@ img {
 
 .navbar-inverse .navbar-collapse {
   border-color: white; }
+
+.navbar-toggle:focus {
+  background-color: none; }
 
 .content {
   margin-top: 100px; }
