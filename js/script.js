@@ -27,5 +27,45 @@ $(document).ready(function(){
 	
 	var trigger = new ScrollTrigger();
 
+
+
+
+	// LightBox
+	var LightBoxOpen = false;
+
+	function openLightbox(){
+		document.getElementById('Lightbox').style.display = "block";
+		 LightBoxOpen = true;
+		 // console.log(openLightbox);
+		 
+	}
+
+	function closeLightbox(){
+		document.getElementById('Lightbox').style.display = "none";
+		 LightBoxOpen = false;
+
+	}
+
+	openLightbox();
+	closeLightbox();
+
+
+	// var Images = $(".single-image");
+	// for (var i = 0; i < Images.length; i++) {
+	// 	Images[i].onclick = function(){
+	// 	var image = this.getElementsByTagName('img')[0];
+	// 	$("#Lightbox-Image").src = image.src;
+
+
+	// 	}
+
+
+	// }
+// closeLightbox();
+// openLightbox();
+
+
+
+
 });
 
