@@ -28,43 +28,31 @@ $(document).ready(function(){
 	var trigger = new ScrollTrigger();
 
 
-
+	//----Lightbox----//
 	var	lightBox = $("#Lightbox");
-	function openLightBox(){
-		lightBox = $("#Lightbox");
-		$(".single-image").click(function(){
-			lightBox.css('display', 'block');
-
-		})
-
-	};
-
-	function closeLightBox(){
-		$(".close-button").click(function(){
-			lightBox.css('display', 'none');	
-
-
-		});
-
-
-	};
-
-	openLightBox();
-	closeLightBox();
+	var Images = $(".single-image");
 
 
 
-	// var Images = $(".single-image");
-	// for (var i = 0; i < Images.length; i++) {
-	// 	Images[i].onclick = function(){
-	// 	var image = this.getElementsByTagName('img')[0];
-	// 	$("#Lightbox-Image").src = image.src;
+	$(".single-image").click(function(){
+		lightBox.css('display', 'block');
+		for (var i = 0; i < Images.length; i++) {
+			var image = this.getElementsByTagName('img')[0];
+			document.getElementById('Lightbox-Image').src = image.src;
+			// console.log(Images[i]);
+
+		}
+		$('body').addClass('preventscroll');
+
+	});
 
 
-	// 	}
+	$(".close-button").click(function(){
+		lightBox.css('display', 'none');
+		$('body').removeClass('preventscroll');
 
+	});
 
-	// }
 
 
 

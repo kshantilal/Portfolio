@@ -205,7 +205,8 @@ a.centro:hover:after {
 .swiper-container {
   max-width: 1024px;
   max-height: 20%;
-  min-height: 230px; }
+  min-height: 230px;
+  cursor: pointer; }
 
 .swiper-button-next {
   background-size: 20px;
@@ -328,12 +329,17 @@ i {
 #Lightbox-Content {
   position: relative;
   margin: 0 auto;
-  width: 800px;
-  height: 600px; }
+  width: 75%; }
 
 .close-button {
   margin: 20px;
-  text-align: center;
-  font-size: 20px;
+  float: right;
+  font-size: 30px;
   color: white;
-  margin-top: 100px; }
+  margin-top: 100px;
+  cursor: pointer; }
+
+.preventscroll {
+  overflow: hidden; }
+
+/*# sourceMappingURL=custom.css.map */
