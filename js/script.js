@@ -29,25 +29,29 @@ $(document).ready(function(){
 
 
 
+	var	lightBox = $("#Lightbox");
+	function openLightBox(){
+		lightBox = $("#Lightbox");
+		$(".single-image").click(function(){
+			lightBox.css('display', 'block');
 
-	// LightBox
-	var LightBoxOpen = false;
+		})
 
-	function openLightbox(){
-		document.getElementById('Lightbox').style.display = "block";
-		 LightBoxOpen = true;
-		 // console.log(openLightbox);
-		 
-	}
+	};
 
-	function closeLightbox(){
-		document.getElementById('Lightbox').style.display = "none";
-		 LightBoxOpen = false;
+	function closeLightBox(){
+		$(".close-button").click(function(){
+			lightBox.css('display', 'none');	
 
-	}
 
-	openLightbox();
-	closeLightbox();
+		});
+
+
+	};
+
+	openLightBox();
+	closeLightBox();
+
 
 
 	// var Images = $(".single-image");
@@ -61,9 +65,6 @@ $(document).ready(function(){
 
 
 	// }
-// closeLightbox();
-// openLightbox();
-
 
 
 
