@@ -1,5 +1,16 @@
 $(document).ready(function(){
 	
+
+	// Scroll on click
+	$("#down-arrow").click(function(){
+		$("html, body").animate({
+			scrollTop: $(".cover-container").offset().top + $(".cover-container")[0].scrollHeight
+		},
+		1500);		
+
+	});
+
+
 	var mySwiper = new Swiper('.swiper-container', {
 		pagination: '.swiper-pagination',
 		nextButton: '.swiper-button-next',
@@ -32,9 +43,7 @@ $(document).ready(function(){
 	var	lightBox = $("#Lightbox");
 	var Images = $(".single-image");
 
-
-
-	$(".single-image").click(function(){
+	Images.click(function(){
 		lightBox.css('display', 'block');
 		for (var i = 0; i < Images.length; i++) {
 			var image = this.getElementsByTagName('img')[0];

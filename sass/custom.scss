@@ -10,33 +10,6 @@ $navy-color: #191f2d;
 
 //------------------------------------//
 
-@media screen and (min-width: 375px) {
-  iframe{    
-    min-width: 375px;
-    }
-    .I-frame{
-    	height: 667px;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-  iframe{ 
-    min-width: 1024px;
-    }
-    .I-frame{
-    	height: 768px;
-    }
-}
-
-@media screen and (min-width: 1980px) {
-  iframe{    
-    max-width: 1980px;
-    }
-    .I-frame{
-    	height: 1080px;
-    }
-}
-
 body{
 	width: $max;
 	margin: 0px;
@@ -78,6 +51,41 @@ img{
 	margin: 0 auto;
 	color: #c1c1c1;
 	
+}
+
+#down-arrow{
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	top: 20%; 	
+}
+
+.bottom:hover{
+	-webkit-transition: transform 0.3s ease, opacity 1.0s ease;	
+	transform: translate(0,5px);
+	cursor: pointer;
+}
+
+.bottom{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+}
+
+.bottom:after{
+	content: "";
+	display: inline-block;
+	margin-top: 11px;
+	width: 1.4em;
+	height: 1.4em;
+	border-top: 2px solid #fff;
+	border-right: 2px solid #fff;
+	-moz-transform: rotate(135deg);
+	-webkit-transform: rotate(135deg);
+	transform: rotate(135deg);
 }
 
 //---------- BOOTSTRAP Overide ----------//
@@ -460,8 +468,37 @@ i {
     overflow: hidden;
 }
 
+//---------- Media Queries ----------//
+@media only screen and (min-width: 375px) {
+  iframe{    
+    min-width: 375px;
+    }
+    .I-frame{
+    	height: 667px;
+    }
+}
 
+@media only screen and (min-width: 1024px) {
+  iframe{ 
+    min-width: 1024px;
+    }
+    .I-frame{
+    	height: 768px;
+    }
+    #Lightbox-Content{
+    	width: 60%;
+    }
 
+}
+
+@media only screen and (min-width: 1980px) {
+  iframe{    
+    max-width: 1980px;
+    }
+    .I-frame{
+    	height: 1080px;
+    }
+}
 
 
 
