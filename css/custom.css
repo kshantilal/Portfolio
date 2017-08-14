@@ -68,7 +68,8 @@ img {
 
 .navbar {
   background-color: #191f2d;
-  border-color: white; }
+  border-color: #191f2d;
+  font-size: 11px; }
 
 .navbar-inverse .navbar-collapse {
   border-color: white; }
@@ -336,5 +337,3 @@ i {
   font-size: 20px;
   color: white;
   margin-top: 100px; }
-
-/*# sourceMappingURL=custom.css.map */

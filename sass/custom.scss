@@ -100,7 +100,8 @@ img{
 
 .navbar{
 	background-color: $navy-color;
-	border-color: white;
+	border-color: $navy-color;
+	font-size: 11px;
 }
 
 .navbar-inverse .navbar-collapse{
