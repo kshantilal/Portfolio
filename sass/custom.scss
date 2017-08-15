@@ -40,7 +40,7 @@ img{
 }
 
 .logo-center{
-	padding-top: 200px;
+	padding-top: 50%;
 	margin: 0 auto;
 	width: 100px;
 
@@ -452,52 +452,60 @@ i {
 #Lightbox-Content{
 	position: relative;
 	margin: 0 auto;
-	width: 75%;
+	width: 100%;
+	top: 100px;
 }
 
 .close-button {
 	margin: 20px;
+	margin-bottom: 0px;
 	float: right;
 	font-size: 30px;
 	color: white;
-	margin-top: 100px;
+	margin-top: 50px;
 	cursor: pointer;
 }
 
 .preventscroll{
-    overflow: hidden;
+	overflow: hidden;
 }
 
 //---------- Media Queries ----------//
-@media only screen and (min-width: 375px) {
-  iframe{    
-    min-width: 375px;
-    }
-    .I-frame{
-    	height: 667px;
-    }
-}
 
 @media only screen and (min-width: 1024px) {
-  iframe{ 
-    min-width: 1024px;
-    }
-    .I-frame{
-    	height: 768px;
-    }
-    #Lightbox-Content{
-    	width: 60%;
-    }
+	.logo-center{
+		padding-top: 20%;
+	}
+	#Lightbox-Content{
+		width: 80%;
+		top: 50px;
+	}
+
+}
+@media only screen and (min-width: 1200px){
+	#Lightbox-Content{
+		width: 60%;
+		top: 10px;
+	}
+	.logo-center{
+		padding-top: 15%;
+	}
+	.close-button{
+		margin-bottom: 0px;
+		margin-top: 50px;
+	}
+
 
 }
 
-@media only screen and (min-width: 1980px) {
-  iframe{    
-    max-width: 1980px;
-    }
-    .I-frame{
-    	height: 1080px;
-    }
+@media only screen and (min-width: 1680px) {
+	.logo-center{
+		padding-top: 15%;
+	}
+	#Lightbox-Content{
+		width: 70%;
+	}
+
 }
 
 
