@@ -114,6 +114,7 @@ img{
 
 .navbar-inverse .navbar-collapse{
 	border-color: white;
+	border-bottom: 1px solid #fff;
 }
 
 .navbar-toggle:focus{
@@ -471,6 +472,12 @@ i {
 }
 
 //---------- Media Queries ----------//
+@media only screen and (min-width: 768px){
+	.navbar-inverse .navbar-collapse{
+		border-bottom: none;
+	}
+	
+}
 
 @media only screen and (min-width: 1024px) {
 	.logo-center{
@@ -479,6 +486,9 @@ i {
 	#Lightbox-Content{
 		width: 80%;
 		top: 50px;
+	}
+	.navbar-inverse .navbar-collapse{
+		border-bottom: none;
 	}
 
 }
@@ -494,6 +504,9 @@ i {
 		margin-bottom: 0px;
 		margin-top: 50px;
 	}
+	.navbar-inverse .navbar-collapse{
+		border-bottom: none;
+	}
 
 
 }
@@ -504,6 +517,9 @@ i {
 	}
 	#Lightbox-Content{
 		width: 70%;
+	}
+	.navbar-inverse .navbar-collapse{
+		border-bottom: none;
 	}
 
 }

@@ -85,7 +85,8 @@ img {
   font-size: 11px; }
 
 .navbar-inverse .navbar-collapse {
-  border-color: white; }
+  border-color: white;
+  border-bottom: 1px solid #fff; }
 
 .navbar-toggle:focus {
   background-color: none; }
@@ -357,13 +358,19 @@ i {
 .preventscroll {
   overflow: hidden; }
 
+@media only screen and (min-width: 768px) {
+  .navbar-inverse .navbar-collapse {
+    border-bottom: none; } }
 @media only screen and (min-width: 1024px) {
   .logo-center {
     padding-top: 20%; }
 
   #Lightbox-Content {
     width: 80%;
-    top: 50px; } }
+    top: 50px; }
+
+  .navbar-inverse .navbar-collapse {
+    border-bottom: none; } }
 @media only screen and (min-width: 1200px) {
   #Lightbox-Content {
     width: 60%;
@@ -374,12 +381,18 @@ i {
 
   .close-button {
     margin-bottom: 0px;
-    margin-top: 50px; } }
+    margin-top: 50px; }
+
+  .navbar-inverse .navbar-collapse {
+    border-bottom: none; } }
 @media only screen and (min-width: 1680px) {
   .logo-center {
     padding-top: 15%; }
 
   #Lightbox-Content {
-    width: 70%; } }
+    width: 70%; }
+
+  .navbar-inverse .navbar-collapse {
+    border-bottom: none; } }
 
 /*# sourceMappingURL=custom.css.map */
