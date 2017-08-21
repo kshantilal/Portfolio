@@ -44,7 +44,9 @@ $(document).ready(function(){
 	var Images = $(".single-image");
 
 	Images.click(function(){
-		lightBox.css('display', 'block');
+		// lightBox.css('display', 'block');
+		lightBox.fadeIn("fast");
+
 		for (var i = 0; i < Images.length; i++) {
 			var image = this.getElementsByTagName('img')[0];
 			document.getElementById('Lightbox-Image').src = image.src;
@@ -57,8 +59,9 @@ $(document).ready(function(){
 
 
 	$(".close-button").click(function(){
-		lightBox.css('display', 'none');
+		// lightBox.css('display', 'none');
 		$('body').removeClass('preventscroll');
+		lightBox.fadeOut("fast");
 
 	});
 
