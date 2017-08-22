@@ -64,6 +64,7 @@ $(document).ready(function(){
 		});
 
 		$("#Lightbox").click(function(){
+			$('body').removeClass('preventscroll');
 			lightBox.fadeOut("fast");
 
 		});
