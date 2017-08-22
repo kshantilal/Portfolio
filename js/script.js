@@ -38,32 +38,40 @@ $(document).ready(function(){
 	
 	var trigger = new ScrollTrigger();
 
+	function lightBoxModal() {
+		//----Lightbox----//
+		var	lightBox = $("#Lightbox");
+		var Images = $(".single-image");
 
-	//----Lightbox----//
-	var	lightBox = $("#Lightbox");
-	var Images = $(".single-image");
+		Images.click(function(){
+			lightBox.fadeIn("fast");
 
-	Images.click(function(){
-		// lightBox.css('display', 'block');
-		lightBox.fadeIn("fast");
+			for (var i = 0; i < Images.length; i++) {
+				var image = this.getElementsByTagName('img')[0];
+				document.getElementById('Lightbox-Image').src = image.src;
+				// console.log(Images[i]);
 
-		for (var i = 0; i < Images.length; i++) {
-			var image = this.getElementsByTagName('img')[0];
-			document.getElementById('Lightbox-Image').src = image.src;
-			// console.log(Images[i]);
+			}
+			$('body').addClass('preventscroll');
 
-		}
-		$('body').addClass('preventscroll');
-
-	});
+		});
 
 
-	$(".close-button").click(function(){
-		// lightBox.css('display', 'none');
-		$('body').removeClass('preventscroll');
-		lightBox.fadeOut("fast");
+		$(".close-button").click(function(){
+			$('body').removeClass('preventscroll');
+			lightBox.fadeOut("fast");
 
-	});
+		});
+
+		$("#Lightbox").click(function(){
+			lightBox.fadeOut("fast");
+
+		});
+
+	}
+
+	lightBoxModal();
+	
 
 
 
