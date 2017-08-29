@@ -43,7 +43,6 @@ img {
   top: 10%; }
 
 .bottom:hover {
-  -webkit-transition: transform 0.3s ease, opacity 1.0s ease;
   transform: translate(0, 5px);
   cursor: pointer; }
 
@@ -52,7 +51,8 @@ img {
   width: 50px;
   height: 50px;
   border: 1px solid #fff;
-  border-radius: 50%; }
+  border-radius: 50%;
+  transition: all 0.2s ease; }
 
 .bottom:after {
   content: "";
@@ -94,10 +94,11 @@ img {
 .content {
   margin-top: 100px; }
 
-.content-title {
+.title-content {
   text-align: center;
   width: 100%;
-  color: #191f2d; }
+  color: #191f2d;
+  padding-bottom: 40px; }
 
 a:hover {
   color: #2d2d2d;
@@ -157,7 +158,7 @@ a:hover {
 .content-title {
   text-align: center;
   font-size: 40px;
-  font-weight: bold;
+  font-weight: lighter;
   line-height: 32px;
   color: #191f2d;
   top: -48px;
@@ -359,9 +360,54 @@ i {
 .preventscroll {
   overflow: hidden; }
 
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  outline: 0;
+  -webkit-appearance: none; }
+
+.button {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  padding: 20px 38px;
+  top: 0;
+  font-size: 35px;
+  border-radius: 0px;
+  border: 3px solid black;
+  color: #191f2d;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+
+/* Custom */
+.button:hover {
+  top: -15px;
+  box-shadow: 0 10px 10px #636c82;
+  -webkit-transform: rotateX(20deg);
+  -moz-transform: rotateX(20deg);
+  -ms-transform: rotateX(20deg);
+  transform: rotateX(20deg); }
+
+button:active {
+  top: 0px;
+  box-shadow: 0px 0px 0px rgba(15, 165, 60, 0);
+  background: #191f2d; }
+
 @media only screen and (min-width: 768px) {
   .navbar-inverse .navbar-collapse {
-    border-bottom: none; } }
+    border-bottom: none; }
+
+  .button {
+    font-size: 50px;
+    padding: 10px 40px; } }
 @media only screen and (min-width: 1024px) {
   .logo-center {
     padding-top: 20%; }
