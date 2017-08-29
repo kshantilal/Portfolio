@@ -34,7 +34,11 @@ img{
 
 .cover-container{
 	text-align: center;
-	background-color: $navy-color;
+	// background-color: $navy-color;
+	background: #00467F;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #89adff, #b78aff);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #89adff, #b78aff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 	height: 100vh;
 	padding: 20px;
 }
@@ -49,7 +53,7 @@ img{
 .intro-text{
 	padding-top: 20px;
 	margin: 0 auto;
-	color: #c1c1c1;
+	color: #fff;
 	
 }
 
@@ -100,6 +104,7 @@ img{
 .col-noPadding{
 	padding-right: 0px;
 	padding-left: 0px;
+	margin-top: 100px;
 }
 
 .navbar-toggle{
@@ -124,10 +129,6 @@ img{
 }
 
 //---------- CONTENT ----------//
-
-.content{
-	margin-top: 100px;
-}
 
 
 .title-content{
@@ -156,25 +157,6 @@ a:hover{ //deletes the link line
 	overflow: hidden;
 	perspective: 300px;
 	transform-style: preserve-3d;
-}
-
-// ----------Footer---------- //
-
-.footer {
-	height: 60px;
-	margin-top: 50px;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	padding: 2.5rem;
-	background-color: $navy-color;
-	text-align: center;
-	font-size: 10px;
-	color: #a8a8a8;
-}
-.footer-text:hover {
-	color: #fff;
-	-webkit-transition: color 1s, opacity 1.0s ease;
 }
 
 
@@ -208,6 +190,7 @@ a:hover{ //deletes the link line
 	line-height: 32px;
 	color: $navy-color;
 	top: -48px;
+	font-weight: bold;
 	position: relative;
 }
 .svg-wrapper:hover .shape {
@@ -275,6 +258,16 @@ a.centro:hover:after {
 
 .text-container{
 	margin-top: 50px;
+}
+
+.content-web{
+
+}
+.content-graphic{
+
+}
+.content-photography{
+
 }
 
 // ----------CAROUSEL---------- //
@@ -491,16 +484,17 @@ button {
 	text-align: center;
 	display: inline-block;
 	position: relative;
-	padding: 20px 38px;
-	top: 0;
-	font-size: 35px;
-	border-radius: 0px;
-	border: 3px solid black;
+    padding: 7px 38px;
+    top: 0;
+    font-size: 30px;
+    font-weight: bold;
+	border-radius: 5px;
+	// border: 2px solid white;
+	background: #00467F;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #89adff, #b78aff);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #89adff, #b78aff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-	// background: #2b5876;  /* fallback for old browsers */
-	// background: -webkit-linear-gradient(to right, $navy-color, rgba(52, 91, 117, 0.75));  /* Chrome 10-25, Safari 5.1-6 */
-	// background: linear-gradient(to right, $navy-color, rgba(52, 91, 117, 0.75)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	color: $navy-color;
+	color: #fff;
   
 	-webkit-transform: translateZ(0);
 	-moz-transform: translateZ(0);
@@ -533,7 +527,25 @@ button:active {
 }
 
 
+// ----------Footer---------- //
 
+.footer {
+	height: 60px;
+	margin-top: 50px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 2.5rem;
+	background-color: $navy-color;
+	text-align: center;
+	font-size: 10px;
+	color: #a8a8a8;
+
+}
+.footer-text:hover {
+	color: #fff;
+	-webkit-transition: color 1s, opacity 1.0s ease;
+}
 
 //---------- Media Queries ----------//
 @media only screen and (min-width: 768px){
