@@ -419,13 +419,13 @@ a.centro:hover:after {
 }
 
 .fa:hover{
-	-webkit-transition: transform 0.3s ease, opacity 1.0s ease;	
 	transform: translate(0,-5px);
 	cursor: pointer;
 }
 
 i {
 	letter-spacing: 10px;
+	transition: all .3s
 }
 
 // .I-frame{

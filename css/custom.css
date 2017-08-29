@@ -322,12 +322,12 @@ a.centro:hover:after {
   color: white; }
 
 .fa:hover {
-  -webkit-transition: transform 0.3s ease, opacity 1.0s ease;
   transform: translate(0, -5px);
   cursor: pointer; }
 
 i {
-  letter-spacing: 10px; }
+  letter-spacing: 10px;
+  transition: all 0.3s; }
 
 #Lightbox {
   display: none;
@@ -344,7 +344,7 @@ i {
   position: relative;
   margin: 0 auto;
   width: 100%;
-  top: 100px; }
+  top: 35%; }
 
 .close-button {
   margin: 20px;
@@ -352,7 +352,8 @@ i {
   float: right;
   font-size: 30px;
   color: white;
-  margin-top: 50px;
+  position: absolute;
+  left: 85%;
   cursor: pointer; }
 
 .preventscroll {
