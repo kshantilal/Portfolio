@@ -21,12 +21,7 @@ img {
 
 .cover-container {
   text-align: center;
-  background: #00467F;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #89adff, #b78aff);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #89adff, #b78aff);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #191f2d;
   height: 100vh;
   padding: 20px; }
 
@@ -38,7 +33,7 @@ img {
 .intro-text {
   padding-top: 20px;
   margin: 0 auto;
-  color: #fff; }
+  color: #c1c1c1; }
 
 #down-arrow {
   width: 100%;
@@ -144,7 +139,7 @@ a:hover {
 
 .content-title {
   text-align: center;
-  font-size: 40px;
+  font-size: 80px;
   font-weight: lighter;
   line-height: 32px;
   color: #191f2d;
@@ -369,7 +364,7 @@ button {
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #89adff, #b78aff);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #89adff, #b78aff);
+  background: linear-gradient(to right, #75c2d4, #80a1ec);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #fff;
   -webkit-transform: translateZ(0);
@@ -417,28 +412,39 @@ button:active {
 
   .button {
     font-size: 50px;
-    padding: 10px 40px; } }
+    padding: 10px 40px; }
+
+  #Lightbox-Content {
+    top: 25%; }
+
+  .close-button {
+    left: 90%;
+    top: 20px; } }
 @media only screen and (min-width: 1024px) {
   .logo-center {
     padding-top: 20%; }
 
   #Lightbox-Content {
     width: 80%;
-    top: 50px; }
+    top: 20%; }
 
   .navbar-inverse .navbar-collapse {
-    border-bottom: none; } }
+    border-bottom: none; }
+
+  .close-button {
+    left: 92%;
+    top: 0px; } }
 @media only screen and (min-width: 1200px) {
   #Lightbox-Content {
     width: 60%;
-    top: 10px; }
+    top: 80px; }
 
   .logo-center {
     padding-top: 15%; }
 
   .close-button {
     margin-bottom: 0px;
-    margin-top: 50px; }
+    margin-top: 20px; }
 
   .navbar-inverse .navbar-collapse {
     border-bottom: none; } }
@@ -450,6 +456,9 @@ button:active {
     width: 70%; }
 
   .navbar-inverse .navbar-collapse {
-    border-bottom: none; } }
+    border-bottom: none; }
+
+  .close-button {
+    left: 94%; } }
 
 /*# sourceMappingURL=custom.css.map */

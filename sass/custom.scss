@@ -34,11 +34,10 @@ img{
 
 .cover-container{
 	text-align: center;
-	// background-color: $navy-color;
-	background: #00467F;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #89adff, #b78aff);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #89adff, #b78aff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+	background-color: $navy-color;
+	// background: #00467F;  /* fallback for old browsers */
+	// background: -webkit-linear-gradient(to right, #89adff, #b78aff);  /* Chrome 10-25, Safari 5.1-6 */
+	// background: linear-gradient(to right, #89adff, #b78aff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	height: 100vh;
 	padding: 20px;
 }
@@ -53,7 +52,7 @@ img{
 .intro-text{
 	padding-top: 20px;
 	margin: 0 auto;
-	color: #fff;
+	color: #c1c1c1;
 	
 }
 
@@ -185,7 +184,7 @@ a:hover{ //deletes the link line
 
 .content-title {
 	text-align: center;
-	font-size: 40px;
+	font-size: 80px;
 	font-weight: lighter;
 	line-height: 32px;
 	color: $navy-color;
@@ -484,15 +483,15 @@ button {
 	text-align: center;
 	display: inline-block;
 	position: relative;
-    padding: 7px 38px;
-    top: 0;
-    font-size: 30px;
-    font-weight: bold;
+	padding: 7px 38px;
+	top: 0;
+	font-size: 30px;
+	font-weight: bold;
 	border-radius: 5px;
 	// border: 2px solid white;
 	background: #00467F;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #89adff, #b78aff);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #89adff, #b78aff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: linear-gradient(to right, #75c2d4, #80a1ec); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 	color: #fff;
   
@@ -553,8 +552,15 @@ button:active {
 		border-bottom: none;
 	}
 	.button{
-    	font-size: 50px;
-    	padding: 10px 40px;
+		font-size: 50px;
+		padding: 10px 40px;
+	}
+	#Lightbox-Content{
+		top: 25%;
+	}
+	.close-button{
+		left: 90%;
+		top: 20px;
 	}
 	
 }
@@ -565,24 +571,28 @@ button:active {
 	}
 	#Lightbox-Content{
 		width: 80%;
-		top: 50px;
+		top: 20%;
 	}
 	.navbar-inverse .navbar-collapse{
 		border-bottom: none;
+	}
+	.close-button{
+		left: 92%;
+		top: 0px;
 	}
 
 }
 @media only screen and (min-width: 1200px){
 	#Lightbox-Content{
 		width: 60%;
-		top: 10px;
+		top: 80px;
 	}
 	.logo-center{
 		padding-top: 15%;
 	}
 	.close-button{
 		margin-bottom: 0px;
-		margin-top: 50px;
+		margin-top: 20px;
 	}
 	.navbar-inverse .navbar-collapse{
 		border-bottom: none;
@@ -600,6 +610,9 @@ button:active {
 	}
 	.navbar-inverse .navbar-collapse{
 		border-bottom: none;
+	}
+	.close-button{
+		left: 94%;
 	}
 
 }
