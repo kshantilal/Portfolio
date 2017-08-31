@@ -26,7 +26,7 @@ img {
   padding: 20px; }
 
 .logo-center {
-  padding-top: 50%;
+  padding-top: 30%;
   margin: 0 auto;
   width: 100px; }
 
@@ -92,6 +92,9 @@ img {
 .navbar-toggle:focus {
   background-color: none; }
 
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+  background-color: transparent; }
+
 .title-content {
   text-align: center;
   width: 100%;
@@ -139,7 +142,7 @@ a:hover {
 
 .content-title {
   text-align: center;
-  font-size: 80px;
+  font-size: 40px;
   font-weight: lighter;
   line-height: 32px;
   color: #191f2d;
@@ -419,7 +422,13 @@ button:active {
 
   .close-button {
     left: 90%;
-    top: 20px; } }
+    top: 20px; }
+
+  .content-title {
+    font-size: 60px; }
+
+  .logo-center {
+    padding-top: 35%; } }
 @media only screen and (min-width: 1024px) {
   .logo-center {
     padding-top: 20%; }
@@ -447,7 +456,10 @@ button:active {
     margin-top: 20px; }
 
   .navbar-inverse .navbar-collapse {
-    border-bottom: none; } }
+    border-bottom: none; }
+
+  .content-title {
+    font-size: 80px; } }
 @media only screen and (min-width: 1680px) {
   .logo-center {
     padding-top: 15%; }
