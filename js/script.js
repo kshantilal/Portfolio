@@ -1,5 +1,9 @@
 $(document).ready(function(){
 	
+	//Nav Animation
+	$('#nav-icon3').click(function(){
+		$(this).toggleClass('open');
+	});
 
 	// Scroll on click
 	$("#down-arrow").click(function(){
