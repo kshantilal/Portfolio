@@ -10,7 +10,7 @@ $(document).ready(function(){
 		$("html, body").animate({
 			scrollTop: $(".cover-container").offset().top + $(".cover-container")[0].scrollHeight
 		},
-		1500);		
+		800);		
 
 	});
 
@@ -53,8 +53,6 @@ $(document).ready(function(){
 			for (var i = 0; i < Images.length; i++) {
 				var image = this.getElementsByTagName('img')[0];
 				document.getElementById('Lightbox-Image').src = image.src;
-				// console.log(Images[i]);
-
 			}
 			$('body').addClass('preventscroll');
 

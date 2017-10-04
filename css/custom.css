@@ -110,8 +110,8 @@ img {
 
 .bottom {
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   border: 1px solid #fff;
   border-radius: 50%;
   transition: all 0.2s ease; }
@@ -119,9 +119,9 @@ img {
 .bottom:after {
   content: "";
   display: inline-block;
-  margin-top: 11px;
-  width: 1.4em;
-  height: 1.4em;
+  margin-top: 7px;
+  width: 0.8em;
+  height: 0.8em;
   border-top: 2px solid #fff;
   border-right: 2px solid #fff;
   -moz-transform: rotate(135deg);
@@ -369,12 +369,12 @@ a.centro:hover:after {
   margin-top: 80px;
   text-align: center; }
 
-.social-icons a {
-  color: white; }
-
-.fa:hover {
+.icons:hover {
   transform: translate(0, -5px);
   cursor: pointer; }
+
+.social-icons a {
+  color: white; }
 
 i {
   letter-spacing: 10px;
@@ -398,14 +398,16 @@ i {
   top: 30%; }
 
 .close-button {
-  margin: 20px;
-  margin-bottom: 0px;
-  float: right;
   font-size: 30px;
   color: white;
   position: absolute;
-  left: 85%;
+  left: 90%;
+  top: 5%;
   cursor: pointer; }
+
+.close-button:hover {
+  color: #191f2d;
+  transition: all 0.2s ease; }
 
 .preventscroll {
   overflow: hidden; }

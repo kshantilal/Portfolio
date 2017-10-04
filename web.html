@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
 	<link rel="icon" href="img/icon.png">
 </head>
@@ -28,7 +29,6 @@
 						<li><a href="web.html">WEB</a></li>
 						<li><a href="graphic.html">GRAPHIC</a></li>
 						<li><a href="photography.html">PHOTOGRAPHY</a></li>
-						<!-- <li><a href="#contact">CONTACT</a></li> -->
 					</ul>
 				</div><!--/.nav-collapse -->
 			</div>
@@ -39,8 +39,64 @@
 
 		<div id="Lightbox">
 			<div id="Lightbox-Content">
-				<div class="close-button">X</div>
+				<i class="fa fa-times close-button"></i>
+				
 				<img id="Lightbox-Image">
+			</div>
+		</div>
+		<!-- Data Visualisation -->
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="content-container">
+				<hr>
+					<div class="titles" data-scroll="toggle(.fromTopIn, .fromTopOut)">IllustrateYou</div>
+					<p class="blurb" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">This project was created during my time at Yoobee School of Design as part of a group project. The brief was to create a single page web application that pulled data from the Behance API to show off designers work. Users are able to view designers projects and stats about their projects such as likes, views and comments in the form of a visualisation, which was created using the Google Charts API.</p>
+					<p data-scroll="toggle(.fromBottomIn, .fromBottomOut)">The front end was created using HTML/CSS and Javascript to manipulate the DOM. The application is fully responsive for mobile, tablet and desktop.</p>
+				</div>	
+				<br>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="svg-wrapper">
+					<a href="https://www.kunalshantilal.com/IllustrateYou" target="_blank">
+					<svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+						<rect class="shape" height="60" width="320"></rect>
+						<div class="content-title" style="font-size: 20px">Check it out here!</div>
+					</svg>
+					</a>
+					
+				</div>
+			</div>
+		</div>
+
+		<!-- Swiper -->
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide single-image">
+							<img src="img/DataVis/data-vis-responsive.jpg" alt="Responsive">
+						</div>
+						<div class="swiper-slide single-image">
+							<img src="img/DataVis/data-vis-mobile1.jpg" alt="Mobile">
+						</div>
+						<div class="swiper-slide single-image">
+							<img src="img/DataVis/data-vis-mobile2.jpg" alt="Mobile">
+						</div>
+						<div class="swiper-slide single-image">
+							<img src="img/DataVis/data-vis-ipad.jpg" alt="iPad">
+						</div>
+						<div class="swiper-slide single-image">
+							<img src="img/DataVis/data-vis-large.jpg" alt="Large Screen">
+						</div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+					<!-- Add Arrows -->
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
 			</div>
 		</div>
 		
@@ -56,12 +112,10 @@
 				</div>	
 			</div>
 		</div>
-		
-
 		<div class="row">
 			<div class="col-xs-12">
 				<div class="svg-wrapper">
-					<a href="http://kunal.shantilal.yoobee.net.nz/Module%202/Summative/New-Zealand-Tourism/index.html" target="_blank">
+					<a href="https://www.kunalshantilal.com/NewZealandTourism" target="_blank">
 					<svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
 						<rect class="shape" height="60" width="320"></rect>
 						<div class="content-title" style="font-size: 20px">Check it out here!</div>
@@ -115,7 +169,7 @@
 		<div class="row">
 			<div class="col-xs-12">
 				<div class="svg-wrapper">
-					<a href="http://kunal.shantilal.yoobee.net.nz/Module%201/Summertive/Flick-Electric/index.html" target="_blank">
+					<a href="https://www.kunalshantilal.com/FlickElectric" target="_blank">
 					<svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
 						<rect class="shape" height="60" width="320"></rect>
 						<div class="content-title" style="font-size: 20px">Check it out here!</div>
@@ -196,6 +250,6 @@
 	<script src="js/bootstrap.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.js"></script>
 	<script type="text/javascript" src="js/ScrollTrigger.min.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/script.min.js"></script>
 </body>
 </html>
